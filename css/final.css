@@ -1,0 +1,190 @@
+
+
+
+        /* fondo body fuente roboto*/
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #324652;
+        }
+    
+            #inicio {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+                flex-direction: column;
+                height: 100vh;
+                gap: 50px;
+                background: #619abd;
+            }
+        
+            button {
+                padding: 10px 100px;
+                font-size: 3rem;
+                border-radius: 100px;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                background: #354b9d;
+                color: azure;
+                cursor: pointer;
+            }
+        
+            a{
+                text-decoration: none;
+                color:azure ;
+            }
+        
+            /*Productos  */
+        
+        /* Estilos para la sección de ofertas */
+        /* Estilos para la sección de ofertas */
+        #ofertas {
+            padding: 20px;
+            white-space: nowrap; /* Para que los elementos no se rompan y se mantengan en una línea */
+            overflow-x: hidden; /* Oculta la barra de desplazamiento horizontal */
+            overflow-y: hidden; /* Oculta la barra de desplazamiento vertical */
+        }
+
+        #ofertas .card {
+            height: auto;
+            width: 100%;
+            max-width: 350px; /* Ancho máximo de la imagen */
+            justify-content: space-between;
+            flex-direction: column;
+            display: inline-block;
+            margin-right: 10px; /* Espacio entre las imágenes */
+        }
+
+        #ofertas .container-fluid {
+            max-width: 760px; /* Cambia el ancho máximo */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        
+        #productos2 {
+            padding: 20px;
+        }
+    
+        * {
+            box-sizing: border-box;
+        }
+    
+        /* IMAGENes y container */
+        .card {
+            height: auto;
+             width: 100%;
+             max-width: 350px; /* Ancho máximo de la imagen */
+            justify-content: space-between;
+            flex-direction: column;
+            display: inline-block;
+            margin-right: 30px; /* ( >>>) Espacio entre las imágenes horizontal */    
+            margin-bottom: 25px; /* ( V v V ) Ajusta el margen inferior para aumentar la distancia vertical entre las imágenes */
+        }
+
+        #ofertas .card {
+            height: auto;
+            width: 100%;
+            max-width: 350px; /* Ancho máximo de la imagen */
+            justify-content: space-between;
+            flex-direction: column;
+            display: inline-block;
+            margin-right: 40px
+        }        
+    
+        .container-fluid {
+        max-width: 760px; /* Cambia el ancho máximo */
+        margin-left: auto;
+        margin-right: auto;
+    }
+        
+        picture {
+            width: 300px;
+            padding: 5px;
+        }
+        
+        .card img {
+            height: 380px;
+            width: 100%;
+        }
+        /* animaciones IMAGEN, CARD */
+
+        .card {
+            transition: transform 0.3s ease; /* Define la transición de la propiedad transform */
+        }
+        
+        .card:hover {
+            transform: scale(1.1); /* Escala el card al 110% al pasar el cursor sobre él */
+        }
+        
+        
+        /* FUENTES, LETRAS Y MAS */
+        p,span, h1 {
+            padding: 0 0 10px 10px;
+            color: #bee6fd;
+            font-size: 2.4rem; /* Tamaño de fuente en REM */
+        }
+        
+        p {
+            padding: 0 0 10px 10px;
+                color: #bee6fd;
+                font-size: 2.4rem; /* Tamaño de fuente en REM */
+        }
+        
+        h1 {
+            padding: 0 0 10px 10px;
+            color: #619abd;
+            font-size: 4rem;
+        }
+
+        /* sombreado en letras */            
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span {
+        font-weight: 900;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Sombra más suave con opacidad reducida */
+        }
+                
+        span {
+            padding: 0 0 10px 10px;
+            font-size: 2.4rem; /* Tamaño de fuente en REM */
+            color: darkcyan;
+        }
+    
+        /* flechas slide- movimiento carousel */
+
+        /* Estilos para las flechas de navegación del carrusel */
+.carousel-navigation {
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    text-align: center;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: calc(100% + 200px); /* Ajusta la posición vertical */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
